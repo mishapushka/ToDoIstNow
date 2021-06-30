@@ -11,6 +11,7 @@
 		0497AB42268C30BF0030F44C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497AB41268C30BF0030F44C /* ContentView.swift */; };
 		0497AB44268C30C20030F44C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0497AB43268C30C20030F44C /* Assets.xcassets */; };
 		0497AB47268C30C20030F44C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0497AB46268C30C20030F44C /* Preview Assets.xcassets */; };
+		0497AB5B268C3DB80030F44C /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497AB5A268C3DB80030F44C /* TaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		0497AB43268C30C20030F44C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0497AB46268C30C20030F44C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0497AB48268C30C20030F44C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0497AB5A268C3DB80030F44C /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +54,8 @@
 		0497AB3E268C30BF0030F44C /* ToDoIstNow */ = {
 			isa = PBXGroup;
 			children = (
-				0497AB3F268C30BF0030F44C /* ToDoIstNowApp.swift */,
-				0497AB41268C30BF0030F44C /* ContentView.swift */,
-				0497AB43268C30C20030F44C /* Assets.xcassets */,
-				0497AB48268C30C20030F44C /* Info.plist */,
+				0497AB53268C3BD70030F44C /* Resources */,
+				0497AB50268C3B7F0030F44C /* Sources */,
 				0497AB45268C30C20030F44C /* Preview Content */,
 			);
 			path = ToDoIstNow;
@@ -67,6 +67,153 @@
 				0497AB46268C30C20030F44C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0497AB50268C3B7F0030F44C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0497AB51268C3B9E0030F44C /* App */,
+				0497AB52268C3BB50030F44C /* Scenes */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		0497AB51268C3B9E0030F44C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0497AB3F268C30BF0030F44C /* ToDoIstNowApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		0497AB52268C3BB50030F44C /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				0497AB55268C3C930030F44C /* View */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		0497AB53268C3BD70030F44C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0497AB54268C3BF10030F44C /* Configs */,
+				0497AB43268C30C20030F44C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0497AB54268C3BF10030F44C /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				0497AB48268C30C20030F44C /* Info.plist */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		0497AB55268C3C930030F44C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0497AB56268C3CB40030F44C /* Category */,
+				0497AB57268C3CC90030F44C /* Task */,
+				0497AB58268C3D200030F44C /* CreateButton */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0497AB56268C3CB40030F44C /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0497AB41268C30BF0030F44C /* ContentView.swift */,
+				0497AB5D268C3DCA0030F44C /* TabBar */,
+				0497AB5E268C3DEC0030F44C /* Library */,
+				0497AB5F268C3DF70030F44C /* Edit */,
+				0497AB60268C3E070030F44C /* Storage */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		0497AB57268C3CC90030F44C /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				0497AB5A268C3DB80030F44C /* TaskView.swift */,
+				0497AB65268C3E7A0030F44C /* TabBar */,
+				0497AB64268C3E690030F44C /* Screen */,
+				0497AB63268C3E5C0030F44C /* Create */,
+				0497AB62268C3E510030F44C /* Edit */,
+				0497AB61268C3E470030F44C /* Stub */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
+		0497AB58268C3D200030F44C /* CreateButton */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CreateButton;
+			sourceTree = "<group>";
+		};
+		0497AB5D268C3DCA0030F44C /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		0497AB5E268C3DEC0030F44C /* Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		0497AB5F268C3DF70030F44C /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		0497AB60268C3E070030F44C /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		0497AB61268C3E470030F44C /* Stub */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Stub;
+			sourceTree = "<group>";
+		};
+		0497AB62268C3E510030F44C /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		0497AB63268C3E5C0030F44C /* Create */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		0497AB64268C3E690030F44C /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		0497AB65268C3E7A0030F44C /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0497AB5B268C3DB80030F44C /* TaskView.swift in Sources */,
 				0497AB42268C30BF0030F44C /* ContentView.swift in Sources */,
 				0497AB40268C30BF0030F44C /* ToDoIstNowApp.swift in Sources */,
 			);
@@ -271,7 +419,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ToDoIstNow/Preview Content\"";
 				DEVELOPMENT_TEAM = G32U4R37V2;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ToDoIstNow/Info.plist;
+				INFOPLIST_FILE = ToDoIstNow/Resources/Configs/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -293,7 +441,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ToDoIstNow/Preview Content\"";
 				DEVELOPMENT_TEAM = G32U4R37V2;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ToDoIstNow/Info.plist;
+				INFOPLIST_FILE = ToDoIstNow/Resources/Configs/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

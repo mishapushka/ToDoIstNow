@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  CategoryView.swift
 //  ToDoIstNow
 //
 //  Created by mac on 30.06.2021.
@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct CategoryView: View {
     var body: some View {
         Text("Hello, world!")
             .padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct CategoryView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        CategoryView()
     }
 }

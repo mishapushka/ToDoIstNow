@@ -11,7 +11,7 @@ import SwiftUI
 struct ToDoIstNowApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CategoryView()
         }
     }
 }
