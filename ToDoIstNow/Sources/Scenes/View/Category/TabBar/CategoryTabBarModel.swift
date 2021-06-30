@@ -1,8 +1,0 @@
-//
-//  CategoryTabBarModel.swift
-//  ToDoIstNow
-//
-//  Created by mac on 30.06.2021.
-//
-
-import Foundation

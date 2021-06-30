@@ -9,8 +9,10 @@ import SwiftUI
 
 struct CategoryView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack(alignment: Alignment(horizontal: .center, vertical: .center), content: {
+
+            CategoryTopBarView()
+        })
     }
 }
 
