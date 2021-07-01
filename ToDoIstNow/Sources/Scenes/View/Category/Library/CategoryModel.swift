@@ -20,3 +20,16 @@ extension CategoryModel {
         CategoryModel(name: "Upcomming", icon: "calendar.badge.clock")
     ]
 }
+
+struct SectionHeader: Identifiable {
+    var id = UUID()
+    var name: String
+}
+
+extension SectionHeader {
+    static var items = [
+        SectionHeader(name: "Идеи"),
+        SectionHeader(name: "Обучение/Развитие")
+
+    ]
+}
