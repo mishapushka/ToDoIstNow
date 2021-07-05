@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		047B19BB2692DDD100AE7A0A /* SettingsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047B19BA2692DDD100AE7A0A /* SettingsSection.swift */; };
 		0497AB40268C30BF0030F44C /* ToDoIstNowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497AB3F268C30BF0030F44C /* ToDoIstNowApp.swift */; };
 		0497AB42268C30BF0030F44C /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497AB41268C30BF0030F44C /* CategoryView.swift */; };
 		0497AB44268C30C20030F44C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0497AB43268C30C20030F44C /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		047B19BA2692DDD100AE7A0A /* SettingsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSection.swift; sourceTree = "<group>"; };
 		0497AB3C268C30BF0030F44C /* ToDoIstNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoIstNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0497AB3F268C30BF0030F44C /* ToDoIstNowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoIstNowApp.swift; sourceTree = "<group>"; };
 		0497AB41268C30BF0030F44C /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				0497AB73268C71190030F44C /* CategoryLibraryView.swift */,
+				047B19BA2692DDD100AE7A0A /* SettingsSection.swift */,
 				0497AB77268C79440030F44C /* CategoryModel.swift */,
 			);
 			path = Library;
@@ -294,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047B19BB2692DDD100AE7A0A /* SettingsSection.swift in Sources */,
 				0497AB68268C43D00030F44C /* CategoryTopBarView.swift in Sources */,
 				0497AB5B268C3DB80030F44C /* TaskView.swift in Sources */,
 				0497AB74268C71190030F44C /* CategoryLibraryView.swift in Sources */,

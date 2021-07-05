@@ -10,7 +10,11 @@ import SwiftUI
 struct CategoryLibraryView: View {
     
     var categories = CategoryModel.items
-    var sections = SectionHeader.items
+    var firstSections = SectionFavorites.items
+    var secondSections = SectionProjects.items
+    var thirdSections = SectionLabels.items
+    var fourthSections = SectionFilters.items
+
     @State private var multiSelection = Set<UUID>()
 
     var body: some View {
@@ -23,8 +27,23 @@ struct CategoryLibraryView: View {
                 }
                 .font(.system(size: 20))
             }
-            Section(header: Text("Favorites").padding([.top, .bottom])) {
-                ForEach(sections) {items in
+            Section(header: SettingsSection(title: "Favorites").padding()) {
+                ForEach(firstSections) {items in
+                    Text(items.name)
+                }
+            }
+            Section(header: SettingsSection(title: "Projects").padding()) {
+                ForEach(secondSections) {items in
+                    Text(items.name)
+                }
+            }
+            Section(header: SettingsSection(title: "Labels").padding()) {
+                ForEach(thirdSections) {items in
+                    Text(items.name)
+                }
+            }
+            Section(header: SettingsSection(title: "Filters").padding()) {
+                ForEach(fourthSections) {items in
                     Text(items.name)
                 }
             }

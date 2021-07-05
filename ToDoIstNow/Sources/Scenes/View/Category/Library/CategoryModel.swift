@@ -21,15 +21,55 @@ extension CategoryModel {
     ]
 }
 
-struct SectionHeader: Identifiable {
+struct SectionFavorites: Identifiable {
+    var id = UUID()
+    var name: String
+    var imageName: String
+}
+
+extension SectionFavorites {
+    static var items = [
+        SectionFavorites(name: "Идеи", imageName: "circlebadge.fill"),
+        SectionFavorites(name: "Обучение/Развитие", imageName: "circlebadge.fill")
+    ]
+}
+
+struct SectionProjects: Identifiable {
     var id = UUID()
     var name: String
 }
 
-extension SectionHeader {
+extension SectionProjects {
     static var items = [
-        SectionHeader(name: "Идеи"),
-        SectionHeader(name: "Обучение/Развитие")
+        SectionProjects(name: "Личные"),
+        SectionProjects(name: "Покупки"),
+        SectionProjects(name: "Работа"),
+        SectionProjects(name: "Фильмы для просмотра"),
+        SectionProjects(name: "Деньги"),
+        SectionProjects(name: "Жилье"),
+        SectionProjects(name: "Идеи"),
+        SectionProjects(name: "Обучение/Развитие")
+    ]
+}
 
+struct SectionLabels: Identifiable {
+    var id = UUID()
+    var name: String
+}
+
+extension SectionLabels {
+    static var items = [
+        SectionLabels(name: "")
+    ]
+}
+
+struct SectionFilters: Identifiable {
+    var id = UUID()
+    var name: String
+}
+
+extension SectionFilters {
+    static var items = [
+        SectionFilters(name: "")
     ]
 }
