@@ -13,9 +13,9 @@ struct CategoryView: View {
 
             VStack {
                 CategoryTopBarView()
+                    .frame(height: 100)
 
                 CategoryLibraryView()
-                    .padding(.top,-300)
             }
         })
     }

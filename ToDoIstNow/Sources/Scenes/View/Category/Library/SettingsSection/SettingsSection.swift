@@ -16,7 +16,6 @@ struct SettingsSection: View {
 
             Text(title)
                 .font(.headline)
-                .padding(.leading, 10)
 
             Spacer()
 

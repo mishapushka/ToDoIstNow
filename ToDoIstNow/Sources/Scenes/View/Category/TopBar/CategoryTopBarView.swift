@@ -9,9 +9,10 @@ import SwiftUI
 
 struct CategoryTopBarView: View {
     var body: some View {
+
         VStack {
             HStack(spacing: 15) {
-                
+
                 Button(action: {}, label: {
                     Image(systemName: "sun.max")
                         .font(.title)
