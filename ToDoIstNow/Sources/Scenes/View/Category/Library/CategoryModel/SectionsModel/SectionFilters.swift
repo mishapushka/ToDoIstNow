@@ -14,6 +14,7 @@ struct SectionFilters: Identifiable {
 
 extension SectionFilters {
     static var items = [
-        SectionFilters(name: "")
+        SectionFilters(name: "Assigned to me"),
+        SectionFilters(name: "Priority")
     ]
 }

@@ -14,13 +14,10 @@ struct SectionProjects: Identifiable {
 
 extension SectionProjects {
     static var items = [
-        SectionProjects(name: "Личные"),
-        SectionProjects(name: "Покупки"),
-        SectionProjects(name: "Работа"),
-        SectionProjects(name: "Фильмы для просмотра"),
-        SectionProjects(name: "Деньги"),
-        SectionProjects(name: "Жилье"),
-        SectionProjects(name: "Идеи"),
-        SectionProjects(name: "Обучение/Развитие")
+        SectionProjects(name: "Personal"),
+        SectionProjects(name: "Shopping"),
+        SectionProjects(name: "Work"),
+        SectionProjects(name: "movies to watch"),
+        SectionProjects(name: "money")
     ]
 }

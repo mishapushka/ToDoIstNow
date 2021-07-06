@@ -12,11 +12,10 @@ struct CategoryLibraryView: View {
     var categories = CategoryModel.items
     var firstSections = SectionFavorites.items
     var secondSections = SectionProjects.items
-    var thirdSections = SectionLabels.items
-    var fourthSections = SectionFilters.items
+    var thirdSections = SectionFilters.items
 
     @State private var multiSelection = Set<UUID>()
-    @State private var showDetails = false
+    @State private var newToDoItem = ""
 
     var body: some View {
         List(selection: $multiSelection) {
@@ -24,27 +23,48 @@ struct CategoryLibraryView: View {
                 HStack {
                     Image(systemName: category.icon)
                         .foregroundColor(.blue)
-                    Text(category.name)
+                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                        Text(category.name)
+                    })
                 }
                 .font(.system(size: 20))
             }
-            Section(header: SettingsSection(title: "Favorites")) {
+            Section(header: Text("Favorites").textCase(.none)) {
+                HStack {
+                    TextField("New item", text: self.$newToDoItem)
+                    Button(action: {}, label: {
+                        Image(systemName: "plus.circle.fill")
+                            .foregroundColor(.green)
+                            .imageScale(.large)
+                    })
+                }
                 ForEach(firstSections) {items in
                     Text(items.name)
                 }
             }
-            Section(header: SettingsSection(title: "Projects")) {
+            Section(header: Text("Projects").textCase(.none)) {
+                HStack {
+                    TextField("New item", text: self.$newToDoItem)
+                    Button(action: {}, label: {
+                        Image(systemName: "plus.circle.fill")
+                            .foregroundColor(.green)
+                            .imageScale(.large)
+                    })
+                }
                 ForEach(secondSections) {items in
                     Text(items.name)
                 }
             }
-            Section(header: SettingsSection(title: "Labels")) {
-                ForEach(thirdSections) {items in
-                    Text(items.name)
+            Section(header: Text("Filters").textCase(.none)) {
+                HStack {
+                    TextField("New item", text: self.$newToDoItem)
+                    Button(action: {}, label: {
+                        Image(systemName: "plus.circle.fill")
+                            .foregroundColor(.green)
+                            .imageScale(.large)
+                    })
                 }
-            }
-            Section(header: SettingsSection(title: "Filters")) {
-                ForEach(fourthSections) {items in
+                ForEach(thirdSections) {items in
                     Text(items.name)
                 }
             }

@@ -14,7 +14,7 @@ struct SectionFavorites: Identifiable {
 
 extension SectionFavorites {
     static var items = [
-        SectionFavorites(name: "Идеи"),
-        SectionFavorites(name: "Обучение/Развитие")
+        SectionFavorites(name: "Ideas"),
+        SectionFavorites(name: "Training / Development")
     ]
 }
