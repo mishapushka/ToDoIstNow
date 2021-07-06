@@ -13,6 +13,8 @@
 		0497AB47268C30C20030F44C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0497AB46268C30C20030F44C /* Preview Assets.xcassets */; };
 		0497AB5B268C3DB80030F44C /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497AB5A268C3DB80030F44C /* TaskView.swift */; };
 		0497AB68268C43D00030F44C /* CategoryTopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497AB67268C43D00030F44C /* CategoryTopBarView.swift */; };
+		0497AB74268C71190030F44C /* CategoryLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497AB73268C71190030F44C /* CategoryLibraryView.swift */; };
+		0497AB78268C79440030F44C /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497AB77268C79440030F44C /* CategoryModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		0497AB48268C30C20030F44C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0497AB5A268C3DB80030F44C /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		0497AB67268C43D00030F44C /* CategoryTopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTopBarView.swift; sourceTree = "<group>"; };
+		0497AB73268C71190030F44C /* CategoryLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryLibraryView.swift; sourceTree = "<group>"; };
+		0497AB77268C79440030F44C /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +170,8 @@
 		0497AB5E268C3DEC0030F44C /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				0497AB73268C71190030F44C /* CategoryLibraryView.swift */,
+				0497AB77268C79440030F44C /* CategoryModel.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -290,8 +296,10 @@
 			files = (
 				0497AB68268C43D00030F44C /* CategoryTopBarView.swift in Sources */,
 				0497AB5B268C3DB80030F44C /* TaskView.swift in Sources */,
+				0497AB74268C71190030F44C /* CategoryLibraryView.swift in Sources */,
 				0497AB42268C30BF0030F44C /* CategoryView.swift in Sources */,
 				0497AB40268C30BF0030F44C /* ToDoIstNowApp.swift in Sources */,
+				0497AB78268C79440030F44C /* CategoryModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
