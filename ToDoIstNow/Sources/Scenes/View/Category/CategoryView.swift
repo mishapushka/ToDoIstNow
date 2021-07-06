@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CategoryView: View {
     var body: some View {
-        ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom), content: {
+        ZStack(alignment: Alignment(horizontal: .center, vertical: .top), content: {
 
             VStack {
                 CategoryTopBarView()

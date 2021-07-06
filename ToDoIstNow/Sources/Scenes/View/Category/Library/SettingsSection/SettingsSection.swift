@@ -16,6 +16,7 @@ struct SettingsSection: View {
 
             Text(title)
                 .font(.headline)
+                .textCase(.none)
 
             Spacer()
 
@@ -32,6 +33,8 @@ struct SettingsSection: View {
                     .foregroundColor(.gray)
             })
         }
+        .padding()
+        .listRowInsets(EdgeInsets())
     }
 }
 

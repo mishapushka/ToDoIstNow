@@ -16,6 +16,7 @@ struct CategoryLibraryView: View {
     var fourthSections = SectionFilters.items
 
     @State private var multiSelection = Set<UUID>()
+    @State private var showDetails = false
 
     var body: some View {
         List(selection: $multiSelection) {
@@ -27,22 +28,22 @@ struct CategoryLibraryView: View {
                 }
                 .font(.system(size: 20))
             }
-            Section(header: SettingsSection(title: "Favorites").padding()) {
+            Section(header: SettingsSection(title: "Favorites")) {
                 ForEach(firstSections) {items in
                     Text(items.name)
                 }
             }
-            Section(header: SettingsSection(title: "Projects").padding()) {
+            Section(header: SettingsSection(title: "Projects")) {
                 ForEach(secondSections) {items in
                     Text(items.name)
                 }
             }
-            Section(header: SettingsSection(title: "Labels").padding()) {
+            Section(header: SettingsSection(title: "Labels")) {
                 ForEach(thirdSections) {items in
                     Text(items.name)
                 }
             }
-            Section(header: SettingsSection(title: "Filters").padding()) {
+            Section(header: SettingsSection(title: "Filters")) {
                 ForEach(fourthSections) {items in
                     Text(items.name)
                 }
