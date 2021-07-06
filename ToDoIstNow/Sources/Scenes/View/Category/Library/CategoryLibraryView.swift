@@ -10,8 +10,12 @@ import SwiftUI
 struct CategoryLibraryView: View {
     
     var categories = CategoryModel.items
-    var sections = SectionHeader.items
+    var firstSections = SectionFavorites.items
+    var secondSections = SectionProjects.items
+    var thirdSections = SectionFilters.items
+
     @State private var multiSelection = Set<UUID>()
+    @State private var newToDoItem = ""
 
     var body: some View {
         List(selection: $multiSelection) {
@@ -19,12 +23,48 @@ struct CategoryLibraryView: View {
                 HStack {
                     Image(systemName: category.icon)
                         .foregroundColor(.blue)
-                    Text(category.name)
+                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                        Text(category.name)
+                    })
                 }
                 .font(.system(size: 20))
             }
-            Section(header: Text("Favorites").padding([.top, .bottom])) {
-                ForEach(sections) {items in
+            Section(header: Text("Favorites").textCase(.none)) {
+                HStack {
+                    TextField("New item", text: self.$newToDoItem)
+                    Button(action: {}, label: {
+                        Image(systemName: "plus.circle.fill")
+                            .foregroundColor(.green)
+                            .imageScale(.large)
+                    })
+                }
+                ForEach(firstSections) {items in
+                    Text(items.name)
+                }
+            }
+            Section(header: Text("Projects").textCase(.none)) {
+                HStack {
+                    TextField("New item", text: self.$newToDoItem)
+                    Button(action: {}, label: {
+                        Image(systemName: "plus.circle.fill")
+                            .foregroundColor(.green)
+                            .imageScale(.large)
+                    })
+                }
+                ForEach(secondSections) {items in
+                    Text(items.name)
+                }
+            }
+            Section(header: Text("Filters").textCase(.none)) {
+                HStack {
+                    TextField("New item", text: self.$newToDoItem)
+                    Button(action: {}, label: {
+                        Image(systemName: "plus.circle.fill")
+                            .foregroundColor(.green)
+                            .imageScale(.large)
+                    })
+                }
+                ForEach(thirdSections) {items in
                     Text(items.name)
                 }
             }
