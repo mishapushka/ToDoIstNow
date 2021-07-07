@@ -67,7 +67,7 @@ struct CategoryView: View {
                 ToolbarItemGroup(placement: .navigationBarLeading) {
 
                     Button(action: {}, label: {
-                        Image(systemName: "sun.max")
+                        Image(systemName: "line.horizontal.3")
                     })
                 }
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
@@ -81,7 +81,6 @@ struct CategoryView: View {
                     })
 
                     EditButton()
-                    //                    "gearshape"
                 }
             }
             .background(Color("TopBar"))
