@@ -160,7 +160,6 @@
 			isa = PBXGroup;
 			children = (
 				0497AB5A268C3DB80030F44C /* TaskView.swift */,
-				0497AB65268C3E7A0030F44C /* TopBar */,
 				0497AB64268C3E690030F44C /* Screen */,
 				0497AB63268C3E5C0030F44C /* Create */,
 				0497AB62268C3E510030F44C /* Edit */,
@@ -224,13 +223,6 @@
 			children = (
 			);
 			path = Screen;
-			sourceTree = "<group>";
-		};
-		0497AB65268C3E7A0030F44C /* TopBar */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TopBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
