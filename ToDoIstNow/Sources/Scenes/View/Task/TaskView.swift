@@ -48,6 +48,7 @@ struct TaskView: View {
                     }
 
                 }
+                .navigationBarColor(backgroundColor: .systemBlue, tintColor: .white)
 
                 TaskCreateButtonView()
             }

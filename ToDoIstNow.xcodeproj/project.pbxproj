@@ -16,6 +16,7 @@
 		0497AB5B268C3DB80030F44C /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497AB5A268C3DB80030F44C /* TaskView.swift */; };
 		0497AB78268C79440030F44C /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497AB77268C79440030F44C /* CategoryModel.swift */; };
 		04B11AE026987A5F00D64F24 /* TaskCreateButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B11ADF26987A5F00D64F24 /* TaskCreateButtonView.swift */; };
+		04B11AE82699536B00D64F24 /* NavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B11AE72699536B00D64F24 /* NavigationBarModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		0497AB5A268C3DB80030F44C /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		0497AB77268C79440030F44C /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		04B11ADF26987A5F00D64F24 /* TaskCreateButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCreateButtonView.swift; sourceTree = "<group>"; };
+		04B11AE72699536B00D64F24 /* NavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 		0497AB55268C3C930030F44C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04B11AEF2699566500D64F24 /* NavigationBarModifier */,
 				0497AB56268C3CB40030F44C /* Category */,
 				0497AB57268C3CC90030F44C /* Task */,
 			);
@@ -228,6 +231,14 @@
 			path = Screen;
 			sourceTree = "<group>";
 		};
+		04B11AEF2699566500D64F24 /* NavigationBarModifier */ = {
+			isa = PBXGroup;
+			children = (
+				04B11AE72699536B00D64F24 /* NavigationBarModifier.swift */,
+			);
+			path = NavigationBarModifier;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -304,6 +315,7 @@
 				0497AB40268C30BF0030F44C /* ToDoIstNowApp.swift in Sources */,
 				04B11AE026987A5F00D64F24 /* TaskCreateButtonView.swift in Sources */,
 				0497AB78268C79440030F44C /* CategoryModel.swift in Sources */,
+				04B11AE82699536B00D64F24 /* NavigationBarModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
