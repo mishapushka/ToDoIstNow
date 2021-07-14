@@ -83,7 +83,7 @@ struct CategoryView: View {
                     EditButton()
                 }
             }
-            .background(Color("TopBar"))
+            .navigationBarColor(backgroundColor: .systemBlue, tintColor: .white)
         }
         .accentColor(.black)
     }
